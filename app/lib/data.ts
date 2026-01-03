@@ -19,7 +19,6 @@ export async function fetchRevenue() {
     const data = await sql<Revenue[]>`SELECT * FROM revenue`;
 
     console.log('Data fetch completed');
-    console.log(data);
     return data;
   } catch (error) {
     console.error('Database Error:', error);
